@@ -16,7 +16,7 @@ export const Register = () => {
     const submit = async e => {
         e.preventDefault();
         
-        await axios.post('https://capstone-food-token.herokuapp.com/auth/signup', {
+        await axios.post('"https://capstone-food-token.herokuapp.com/signup"', {
             firstname,lastname,mobile,email,email,password,cpassword
         });
         
